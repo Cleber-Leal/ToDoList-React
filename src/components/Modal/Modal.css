@@ -1,0 +1,30 @@
+.container__modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.container__modal-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--bg-colorMenu);
+    border-radius: 15px;
+    width: 80%;
+    height: fit-content;
+    text-align: center;
+    color: white;
+    
+}
+
+@media (min-width:740px) {
+    .container__modal-content {
+        padding: 2rem;
+        max-width: 700px;
+    }
+}

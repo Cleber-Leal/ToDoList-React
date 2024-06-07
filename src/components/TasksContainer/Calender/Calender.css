@@ -1,0 +1,124 @@
+tbody td{
+    padding: .5rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+tbody td.active {
+    background: var(--bg-color);
+}
+
+.info-date {
+    text-align: center;
+    height: 100%;
+    padding: 1rem;
+}
+
+.info-date header {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.info-date .calender {
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: .3rem;
+    background-color: var(--bg-colorSecondary);
+    margin: 1rem auto;
+}
+
+.info-date header {
+    padding: 1rem;
+    background-color: var(--bg-color);
+}
+
+.info-date table {
+    width: 100%;
+    
+}
+
+.info-date thead {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.info-date thead td {
+    padding: .5rem 0;
+    
+}
+
+.info-date-data {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: .5rem;
+    background-color: var(--bg-color);
+    flex-wrap: wrap;
+}
+
+.info-date-data p {
+    font-weight: bold;
+}
+
+.info-date-data span {
+    border: 1px solid black;
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    margin-top: .5rem;
+    background-color: #FFF;
+}
+
+
+@media (min-width: 740px) {
+ 
+    .info-date {
+        grid-column: 2/3;
+        grid-row: 2/4;
+        
+    }
+
+    .info-date .calender {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .info-date header .prev, 
+    .info-date header .next {
+       font-size: 2rem;
+       cursor: pointer;
+    }
+    
+
+    .info-date div tr {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: .5rem;
+        margin-top: .5rem;
+    
+    }
+
+    .info-date .calender {
+        padding: 1rem;
+    }
+
+
+    tbody td:hover {
+        background-color: var(--bg-color);
+    }
+    
+    .info-date-data {
+        width: 90%;
+        margin: 1rem auto 0;
+    }
+   
+}
